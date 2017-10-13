@@ -1,0 +1,19 @@
+.Viewer {
+  width: 100%;
+  background-image: url('ar.png');
+  background-repeat: no-repeat;
+  background-position: cover;
+  height: 100%;
+}
+
+.Viewer-return {
+  text-decoration: none;
+  color: rgb(0, 140, 255);
+  font-size: 0.95em;
+  font-weight: normal;
+  display: inline-block;
+  margin: 15px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 100px;
+}

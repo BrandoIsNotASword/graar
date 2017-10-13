@@ -13,7 +13,7 @@ class Home extends Component {
           <img src={logo} className="Home-logo" alt="logo" />
         </header>
 
-        <TitleSection>Temas</TitleSection>
+        <TitleSection>Asignaturas</TitleSection>
         <Link to="/topics" className="Topic">
           <p className="Topic-name">Cálculo Vectorial</p>
           <p className="Topic-summary">Vectores, gráficas</p>
