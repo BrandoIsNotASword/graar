@@ -1,0 +1,41 @@
+.Home {
+  width: 100%;
+}
+
+.Home-logo {
+  height: 60px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.Home-header {
+  width: 100%;
+  margin: 40px 0 50px 0;
+}
+
+.Topic {
+  background-image: url('topic.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05), 0 -2px 10px rgba(0,0,0,0.05);
+  padding: 15px 15px 40px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.Topic-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.Topic-summary {
+  margin: 0;
+  margin-top: 3px;
+  color: #A7A7A7;
+}
