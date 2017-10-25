@@ -1,7 +1,4 @@
 .App {
-  height: 640px;
-  width: 360px;
-  overflow-y: auto;
   background-color: white;
   display: flex;
   flex-direction: column;

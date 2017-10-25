@@ -37,10 +37,6 @@ class Topics extends Component {
             <img src={topic} className="Topics-topicPreview" />
             <p className="Topics-topicName">Vectores</p>
           </Link>
-          <Link to="/viewer" className="Topics-topic">
-            <img src={topic} className="Topics-topicPreview" />
-            <p className="Topics-topicName">Vectores</p>
-          </Link>
         </div>
         
       </div>

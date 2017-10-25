@@ -14,13 +14,13 @@ class Home extends Component {
         </header>
 
         <TitleSection>Asignaturas</TitleSection>
-        <Link to="/topics" className="Topic">
-          <p className="Topic-name">Cálculo Vectorial</p>
-          <p className="Topic-summary">Vectores, gráficas</p>
+        <Link to="/topics" className="Subject">
+          <p className="Subject-name">Cálculo Vectorial</p>
+          <p className="Subject-summary">Vectores, gráficas</p>
         </Link>
-        <Link to="/topics" className="Topic">
-          <p className="Topic-name">Ecuaciones diferenciales</p>
-          <p className="Topic-summary">Vectores, gráficas</p>
+        <Link to="/topics" className="Subject">
+          <p className="Subject-name">Ecuaciones diferenciales</p>
+          <p className="Subject-summary">Vectores, gráficas</p>
         </Link>
       </div>
     );

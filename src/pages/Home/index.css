@@ -5,7 +5,7 @@
 }
 
 .Home-logo {
-  height: 60px;
+  height: 80px;
   display: flex;
   margin: 0 auto;
 }
@@ -15,7 +15,7 @@
   margin: 40px 0 50px 0;
 }
 
-.Topic {
+.Subject {
   background-image: url('topic.png');
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -30,13 +30,13 @@
   flex-direction: column;
 }
 
-.Topic-name {
+.Subject-name {
   margin: 0;
   font-size: 24px;
   font-weight: normal;
 }
 
-.Topic-summary {
+.Subject-summary {
   margin: 0;
   margin-top: 3px;
   color: #A7A7A7;
