@@ -13,27 +13,27 @@ class Topics extends Component {
 
         <TitleSection>Cálculo Vectorial</TitleSection>
         <div className="Topics-topics">
-          <Link to="/viewer" className="Topics-topic">
+          <Link to="/viewer/topicId" className="Topics-topic">
             <img src={topic} className="Topics-topicPreview" />
             <p className="Topics-topicName">Vectores</p>
           </Link>
-          <Link to="/viewer" className="Topics-topic">
+          <Link to="/viewer/topicId" className="Topics-topic">
             <img src={topic} className="Topics-topicPreview" />
             <p className="Topics-topicName">Vectores</p>
           </Link>
-          <Link to="/viewer" className="Topics-topic">
+          <Link to="/viewer/topicId" className="Topics-topic">
             <img src={topic} className="Topics-topicPreview" />
             <p className="Topics-topicName">Vectores</p>
           </Link>
-          <Link to="/viewer" className="Topics-topic">
+          <Link to="/viewer/topicId" className="Topics-topic">
             <img src={topic} className="Topics-topicPreview" />
             <p className="Topics-topicName">Vectores</p>
           </Link>
-          <Link to="/viewer" className="Topics-topic">
+          <Link to="/viewer/topicId" className="Topics-topic">
             <img src={topic} className="Topics-topicPreview" />
             <p className="Topics-topicName">Vectores</p>
           </Link>
-          <Link to="/viewer" className="Topics-topic">
+          <Link to="/viewer/topicId" className="Topics-topic">
             <img src={topic} className="Topics-topicPreview" />
             <p className="Topics-topicName">Vectores</p>
           </Link>
