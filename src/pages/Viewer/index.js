@@ -6,7 +6,8 @@ import './index.css';
 
 class Viewer extends Component {
   render() {
-    const url = 'https://urielaero.github.io/arjs-examples/get.html';
+    // const url = 'https://urielaero.github.io/arjs-examples/get.html';
+    const url = 'https://urielaero.github.io/arjs-examples/math.html';
 
     return (
       <div className="Viewer">
