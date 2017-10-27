@@ -9,11 +9,7 @@ class TitleSection extends Component {
 }
 
 TitleSection.propTypes = {
-  children: PropTypes.text,
-};
-
-TitleSection.defaultProps = {
-  children: '',
+  children: PropTypes.any,
 };
 
 export default TitleSection;

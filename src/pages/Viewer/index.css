@@ -1,13 +1,11 @@
 .Viewer {
   width: 100%;
-  background-image: url('ar.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   height: 100%;
 }
 
 .Viewer-return {
+  position: absolute;
+  z-index: 1;
   text-decoration: none;
   color: rgb(0, 140, 255);
   font-size: 0.95em;

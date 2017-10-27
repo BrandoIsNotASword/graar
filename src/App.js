@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from './pages/Home/index.js';
-import Topics from './pages/Topics/index.js';
-import Viewer from './pages/Viewer/index.js';
+import Home from './pages/Home';
+import Topics from './pages/Topics';
+import Viewer from './pages/Viewer';
 
 import './App.css';
 
