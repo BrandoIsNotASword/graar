@@ -3,7 +3,9 @@ import Link from 'react-router-dom/Link';
 
 import TitleSection from '../../components/TitleSection';
 import './index.css';
-import topic from './topic.png';
+import axis from './axis.png';
+import ortho from './ortho.png';
+import vertexcolor from './vertexcolor.png';
 
 class Topics extends Component {
   render() {
@@ -13,29 +15,17 @@ class Topics extends Component {
 
         <TitleSection>Cálculo Vectorial</TitleSection>
         <div className="Topics-topics">
-          <Link to="/viewer/topicId" className="Topics-topic">
-            <img src={topic} className="Topics-topicPreview" />
+          <Link to="/viewer/axis.js" className="Topics-topic">
+            <img src={axis} className="Topics-topicPreview" />
+            <p className="Topics-topicName">Axis</p>
+          </Link>
+          <Link to="/viewer/vertexcolor.js" className="Topics-topic">
+            <img src={vertexcolor} className="Topics-topicPreview" />
             <p className="Topics-topicName">Vectores</p>
           </Link>
-          <Link to="/viewer/topicId" className="Topics-topic">
-            <img src={topic} className="Topics-topicPreview" />
-            <p className="Topics-topicName">Vectores</p>
-          </Link>
-          <Link to="/viewer/topicId" className="Topics-topic">
-            <img src={topic} className="Topics-topicPreview" />
-            <p className="Topics-topicName">Vectores</p>
-          </Link>
-          <Link to="/viewer/topicId" className="Topics-topic">
-            <img src={topic} className="Topics-topicPreview" />
-            <p className="Topics-topicName">Vectores</p>
-          </Link>
-          <Link to="/viewer/topicId" className="Topics-topic">
-            <img src={topic} className="Topics-topicPreview" />
-            <p className="Topics-topicName">Vectores</p>
-          </Link>
-          <Link to="/viewer/topicId" className="Topics-topic">
-            <img src={topic} className="Topics-topicPreview" />
-            <p className="Topics-topicName">Vectores</p>
+          <Link to="/viewer/ortho.js" className="Topics-topic Topic-topic__ortho">
+            <img src={ortho} className="Topics-topicPreview" />
+            <p className="Topics-topicName">Ortogonal</p>
           </Link>
         </div>
         

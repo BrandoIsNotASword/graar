@@ -6,14 +6,14 @@ import './index.css';
 
 class Viewer extends Component {
   render() {
-    // const url = 'https://urielaero.github.io/arjs-examples/get.html';
-    const url = 'https://urielaero.github.io/arjs-examples/math.html';
+    const url = `https://urielaero.github.io/arjs-examples/get.html?id=${this.props.match.params.id}`;
+    console.log(url);
 
     return (
       <div className="Viewer">
         <Link to="/topics" className="Viewer-return">REGRESAR</Link>
         <Iframe 
-          url={`${url}?id=${this.props.match.params.id}`}
+          url={url}
           display="initial"
           position="relative"
           allowFullScreen

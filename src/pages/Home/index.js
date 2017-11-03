@@ -14,6 +14,10 @@ class Home extends Component {
 
         <TitleSection>Asignaturas</TitleSection>
         <Link to="/topics" className="Subject">
+          <p className="Subject-name">Ejemplos</p>
+          <p className="Subject-summary">Escribe una descripción</p>
+        </Link>
+        <Link to="/topics" className="Subject">
           <p className="Subject-name">Cálculo Vectorial</p>
           <p className="Subject-summary">Vectores, gráficas</p>
         </Link>
