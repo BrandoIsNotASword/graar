@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Link from 'react-router-dom/Link';
 import Iframe from 'react-iframe';
+import { withRouter } from 'react-router'
 
 import Loader from '../../components/Loader';
 
@@ -12,7 +12,9 @@ class Viewer extends Component {
 
     return (
       <div className="Viewer">
-        <Link to="/topics" className="Viewer-return">REGRESAR</Link>
+        <div className="Viewer-return" onClick={() => this.props.history.goBack()}>
+          REGRESAR
+        </div>
         <Loader />
         <Iframe
           style={{ zIndex: 1 }}
@@ -26,4 +28,4 @@ class Viewer extends Component {
   }
 }
 
-export default Viewer;
+export default withRouter(Viewer);

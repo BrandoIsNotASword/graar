@@ -4,6 +4,7 @@
 }
 
 .Viewer-return {
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   text-decoration: none;

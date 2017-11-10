@@ -6,7 +6,7 @@ import Viewer from './pages/Viewer';
 
 import './App.css';
 
-const req = "https://raw.githubusercontent.com/BrandoIsNotASword/graar-frontend/master/src/api.json";
+const req = "https://urielaero.github.io/arjs-examples/data.json";
 
 class App extends Component {
 
@@ -27,7 +27,7 @@ class App extends Component {
       <div className="App">
         <Switch>
           <Route path="/" render={() => <Home data={this.state.data} />} exact />
-          <Route path="/topic/:id" component={Topics} exact />
+          <Route path="/topic/:id" render={() => <Topics data={this.state.data} />} exact />
           <Route path="/viewer/:id" component={Viewer} />
         </Switch>
       </div>

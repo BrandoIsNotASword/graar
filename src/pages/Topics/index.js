@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
 import Link from 'react-router-dom/Link';
+import { withRouter } from 'react-router'
 
 import TitleSection from '../../components/TitleSection';
 import './index.css';
-import axis from './axis.png';
-import ortho from './ortho.png';
-import vertexcolor from './vertexcolor.png';
 
 class Topics extends Component {
+  renderTopics() {
+    const id = window.location.hash.split('/')[2];
+    const examples = this.props.data.filter((ele) => ele.id === id)[0];
+
+    return examples.content.map((example) => {
+      return (
+        <Link key={example.id} to={`/viewer/${example.id}`} className="Topics-topic">
+          <img src={example.preview} className="Topics-topicPreview" />
+          <p className="Topics-topicName">{example.name}</p>
+        </Link>
+      );
+    });
+  }
+
   render() {
     return (
       <div className="Topics">
@@ -15,18 +27,7 @@ class Topics extends Component {
 
         <TitleSection>Cálculo Vectorial</TitleSection>
         <div className="Topics-topics">
-          <Link to="/viewer/axis.js" className="Topics-topic">
-            <img src={axis} className="Topics-topicPreview" />
-            <p className="Topics-topicName">Axis</p>
-          </Link>
-          <Link to="/viewer/vertexcolor.js" className="Topics-topic">
-            <img src={vertexcolor} className="Topics-topicPreview" />
-            <p className="Topics-topicName">Vectores</p>
-          </Link>
-          <Link to="/viewer/ortho.js" className="Topics-topic Topic-topic__ortho">
-            <img src={ortho} className="Topics-topicPreview" />
-            <p className="Topics-topicName">Ortogonal</p>
-          </Link>
+          {this.renderTopics()}
         </div>
         
       </div>
@@ -34,4 +35,4 @@ class Topics extends Component {
   }
 }
 
-export default Topics;
+export default withRouter(Topics);
