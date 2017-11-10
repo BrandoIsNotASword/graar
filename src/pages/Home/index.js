@@ -5,6 +5,18 @@ import TitleSection from '../../components/TitleSection';
 import './index.css';
 
 class Home extends Component {
+
+  renderTopics() {
+    return this.props.data.map((topic) => {
+      return (
+        <Link key={topic.name} to={`topic/${topic.id}`} className="Subject">
+          <p className="Subject-name">{topic.name}</p>
+          <p className="Subject-summary">{topic.description}</p>
+        </Link>
+      );
+    });
+  }
+
   render() {
     return (
       <div className="Home">
@@ -13,18 +25,7 @@ class Home extends Component {
         </header>
 
         <TitleSection>Asignaturas</TitleSection>
-        <Link to="/topics" className="Subject">
-          <p className="Subject-name">Ejemplos</p>
-          <p className="Subject-summary">Escribe una descripción</p>
-        </Link>
-        <Link to="/topics" className="Subject">
-          <p className="Subject-name">Cálculo Vectorial</p>
-          <p className="Subject-summary">Vectores, gráficas</p>
-        </Link>
-        <Link to="/topics" className="Subject">
-          <p className="Subject-name">Ecuaciones diferenciales</p>
-          <p className="Subject-summary">Vectores, gráficas</p>
-        </Link>
+        {this.renderTopics()}
       </div>
     );
   }

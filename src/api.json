@@ -1,43 +1,40 @@
 [
   {
     "name": "Cálculo Vectorial",
-    "description": "Escribe una descripción",
+    "description": "Vectores",
+    "id": "0",
     "content": [
       {
         "name": "Axis",
         "preview": "PATH",
-        "id": "ID"
+        "id": "axis.js"
       },
       {
         "name": "Vectores",
         "preview": "PATH",
-        "id": "ID"
+        "id": "vertexcolor.js"
       },
       {
         "name": "Ortogonal",
         "preview": "PATH",
-        "id": "ID"
+        "id": "ortho.js"
       }
     ]
-  }, {
+  },
+  {
     "name": "Ecuaciones diferenciales",
-    "description": "Escribe una descripción",
-    "preview": "PATH",
+    "description": "Primer Orden",
+    "id": "1",
     "content": [
       {
         "name": "Axis",
         "preview": "PATH",
-        "id": "ID"
+        "id": "axis.js"
       },
       {
         "name": "Vectores",
         "preview": "PATH",
-        "id": "ID"
-      },
-      {
-        "name": "Ortogonal",
-        "preview": "PATH",
-        "id": "ID"
+        "id": "vertexcolor.js"
       }
     ]
   }
