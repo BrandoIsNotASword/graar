@@ -23,6 +23,8 @@ class App extends Component {
   render() {
     if (this.state.data === null) return <div />;
 
+    console.log(this.state.data);
+
     return (
       <div className="App">
         <Switch>

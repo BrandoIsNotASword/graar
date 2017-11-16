@@ -25,6 +25,15 @@
   width: 100px;
 }
 
+.Topics-topics::-webkit-scrollbar {
+  display: none;
+}
+
+.Topics-examples {
+  display: flex;
+  flex-direction: column;
+}
+
 .Topics-topic {
   text-decoration: none;
   color: inherit;
@@ -43,6 +52,14 @@
   width: 100px;
   margin: 0 auto;
   margin-bottom: auto;
+}
+
+.Topics-exampleName {
+  font-weight: normal;
+  color: gray;
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .Topics-topicName {
